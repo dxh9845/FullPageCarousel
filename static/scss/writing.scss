@@ -1,0 +1,263 @@
+/** VARIABLE DECLARATION **/
+$navcolor: #2EC4B6;
+$lightcolor: #FF3366;
+$highlight: #0275d8;
+$darkcolor: #000;
+$background: #F6F7F8;
+$franklin: "FranklinGothicBook";
+$franklin_demi: "FranklinGothicDemi";
+
+.front-carousel {
+
+    height: 100vh;
+    border-bottom: 3px solid $darkcolor;
+
+    h1.display-3 {
+        font-family: $franklin_demi;
+
+        @media (max-width: 767px) {
+            font-size: 3.5em;
+        }
+
+        @media (max-width: 544px) {
+            font-size: 2.25em;
+        }
+    }
+
+    #actual-carousel {
+        height: 100%;
+    }
+
+    .owl-stage-outer {
+        height: 100%;
+        width: 100%;
+        margin-right: auto!important;
+
+        .owl-stage {
+            height: 100%;
+        }
+
+        .story {
+            margin-bottom: 3rem!important;
+            height: 300px;
+            width: 500px;
+        }
+
+        .owl-item {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .thumb {
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+
+    .owl-nav {
+        right: 5rem;
+    }
+
+    .owl-dots {
+        margin-top: 8px;
+    }
+
+
+    .disclaimer-2 {
+        position: absolute;
+
+        i {
+            color: #000;
+        }
+    }
+
+    .owl-nav, .owl-dots {
+        position: absolute;
+        display: block;
+    }
+
+}
+
+[data-color="light"] {
+    background-color: $background;
+    color: #000;
+
+    .story {
+        background-color: $darkcolor;
+        color: #FFF;
+
+        h2 > a , h3 > a {
+            color: #FFF;
+            text-decoration: none;
+            font-family: $franklin;
+        }
+
+        .attribution {
+            font-family: $franklin_demi;
+            position: absolute;
+        }
+    }
+}
+
+[data-color="dark"] {
+    background-color: $darkcolor;
+    color: #FFF;
+}
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently not supported by any browser */
+}
+
+
+/** OWL CAROUSEL **/
+
+
+/** The parent element to the carousel **/
+
+.featured-slide {
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+}
+
+.owl-prev, .owl-next {
+    font-family: 'FranklinGothicDemi', Arial, Arial;
+    -webkit-border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    border-radius: 0px!important;
+    text-transform: uppercase;
+    background-color: #000!important;
+    opacity: 1!important;
+}
+
+.owl-nav .disabled {
+    opacity: .5!important;
+}
+
+.recent-header {
+    font-family: $franklin_demi;
+
+    h3 > a {
+        color: #FFF;
+    }
+
+    #recent-carousel .recent-item {
+        height: 150px;
+        background-color: #000;
+        padding: 20px;
+        margin: 10px;
+
+        .attribution {
+            position: absolute;
+            bottom: 20px;
+            right: 15px;
+        }
+
+        .thumb {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+}
+
+
+.thumb {
+    background-image: url(../img/rose.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.paper {
+    color: #bcbcbc;
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 375px;
+    max-width: 375px;
+    width: 75%;
+    height: 75%;
+    position: relative;
+    padding: 30px;
+    background: #fff;
+    transition: transform 0.2s ease;
+}
+
+.paper a {
+    font-family: 'FranklinGothicDemi', Arial;
+}
+
+.paper:before,
+.paper:after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    content: "";
+}
+
+.paper:before {
+    border-top: solid 15px #ececec;
+    border-right: solid 15px #ececec;
+    border-left: solid 15px #ececec;
+    border-bottom: solid 15px #ececec;
+}
+
+.paper:after {
+    border-bottom: solid 15px #bcbcbc;
+    border-left: solid 15px #bcbcbc;
+    border-right: solid 15px #000;
+    border-top: solid 15px #000;
+}
+
+.paper:hover .paperline {
+    background-color: #337ab7;
+}
+
+.paperline {
+    position: relative;
+    margin-top: 30px;
+    width: 95%;
+    height: 5px;
+    background-color: #bcbcbc;
+}
+
+.paperline:nth-child(4) {
+    width: 75%;
+}
+
+.story-week {
+    font-family: 'FranklinGothicBook', Arial;
+
+    h1, h2 {
+        font-family: $franklin_demi, Arial;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+}
+
+/** DISCLAIMER **/
+
+.disclaimer {
+    font-family: $franklin, Arial;
+    h3 {
+      font-family: $franklin_demi;
+    }
+}

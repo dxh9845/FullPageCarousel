@@ -1,0 +1,198 @@
+/** VARIABLE DECLARATION **/
+.front-carousel {
+  height: 100vh;
+  border-bottom: 3px solid #000; }
+  .front-carousel h1.display-3 {
+    font-family: "FranklinGothicDemi"; }
+    @media (max-width: 767px) {
+      .front-carousel h1.display-3 {
+        font-size: 3.5em; } }
+    @media (max-width: 544px) {
+      .front-carousel h1.display-3 {
+        font-size: 2.25em; } }
+  .front-carousel #actual-carousel {
+    height: 100%; }
+  .front-carousel .owl-stage-outer {
+    height: 100%;
+    width: 100%;
+    margin-right: auto !important; }
+    .front-carousel .owl-stage-outer .owl-stage {
+      height: 100%; }
+    .front-carousel .owl-stage-outer .story {
+      margin-bottom: 3rem !important;
+      height: 300px;
+      width: 500px; }
+    .front-carousel .owl-stage-outer .owl-item {
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+    .front-carousel .owl-stage-outer .thumb {
+      width: 30px;
+      height: 30px; }
+  .front-carousel .owl-nav {
+    right: 5rem; }
+  .front-carousel .owl-dots {
+    margin-top: 8px; }
+  .front-carousel .disclaimer-2 {
+    position: absolute; }
+    .front-carousel .disclaimer-2 i {
+      color: #000; }
+  .front-carousel .owl-nav, .front-carousel .owl-dots {
+    position: absolute;
+    display: block; }
+
+[data-color="light"] {
+  background-color: #F6F7F8;
+  color: #000; }
+  [data-color="light"] .story {
+    background-color: #000;
+    color: #FFF; }
+    [data-color="light"] .story h2 > a, [data-color="light"] .story h3 > a {
+      color: #FFF;
+      text-decoration: none;
+      font-family: "FranklinGothicBook"; }
+    [data-color="light"] .story .attribution {
+      font-family: "FranklinGothicDemi";
+      position: absolute; }
+
+[data-color="dark"] {
+  background-color: #000;
+  color: #FFF; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently not supported by any browser */ }
+
+/** OWL CAROUSEL **/
+/** The parent element to the carousel **/
+.featured-slide {
+  background-color: #ececec;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.owl-prev, .owl-next {
+  font-family: 'FranklinGothicDemi', Arial, Arial;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  background-color: #000 !important;
+  opacity: 1 !important; }
+
+.owl-nav .disabled {
+  opacity: 0.5 !important; }
+
+.recent-header {
+  font-family: "FranklinGothicDemi"; }
+  .recent-header h3 > a {
+    color: #FFF; }
+  .recent-header #recent-carousel .recent-item {
+    height: 150px;
+    background-color: #000;
+    padding: 20px;
+    margin: 10px; }
+    .recent-header #recent-carousel .recent-item .attribution {
+      position: absolute;
+      bottom: 20px;
+      right: 15px; }
+    .recent-header #recent-carousel .recent-item .thumb {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px; }
+
+.thumb {
+  background-image: url(../img/rose.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.paper {
+  color: #bcbcbc;
+  min-height: 250px;
+  min-width: 250px;
+  max-height: 375px;
+  max-width: 375px;
+  width: 75%;
+  height: 75%;
+  position: relative;
+  padding: 30px;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease; }
+
+.paper a {
+  font-family: 'FranklinGothicDemi', Arial; }
+
+.paper:before,
+.paper:after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  content: ""; }
+
+.paper:before {
+  border-top: solid 15px #ececec;
+  border-right: solid 15px #ececec;
+  border-left: solid 15px #ececec;
+  border-bottom: solid 15px #ececec; }
+
+.paper:after {
+  border-bottom: solid 15px #bcbcbc;
+  border-left: solid 15px #bcbcbc;
+  border-right: solid 15px #000;
+  border-top: solid 15px #000; }
+
+.paper:hover .paperline {
+  background-color: #337ab7; }
+
+.paperline {
+  position: relative;
+  margin-top: 30px;
+  width: 95%;
+  height: 5px;
+  background-color: #bcbcbc; }
+
+.paperline:nth-child(4) {
+  width: 75%; }
+
+.story-week {
+  font-family: 'FranklinGothicBook', Arial; }
+  .story-week h1, .story-week h2 {
+    font-family: "FranklinGothicDemi", Arial; }
+  .story-week p {
+    font-size: 1.25em; }
+
+/** DISCLAIMER **/
+.disclaimer {
+  font-family: "FranklinGothicBook", Arial; }
+  .disclaimer h3 {
+    font-family: "FranklinGothicDemi"; }
+
+/*# sourceMappingURL=writing.css.map */
